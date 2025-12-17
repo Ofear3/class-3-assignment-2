@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="survey.html">Survey</a>
+            <a href="job-application.html">Job Application</a>
+        </nav>
+    </header>
+<main>
+    <h1 align="center">Job Application</h1> <hr/> <br>  
+    <form action="">
+        <!-- Personal Details -->
+       <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name: </label>
+            <input type="text" id="fulname" name="fullname" required placeholder="full name">
+            <br><br>
+
+            <label for="eamil">Email:</label>
+            <input 
+                type="email" 
+                id="eamil" 
+                name="email" 
+                placeholder="email"
+                pattern = "[a-z0-9]" 
+                required >
+            <br><br>
+
+            <label for="telnum">Phone Number: </label>
+            <input 
+                type="number"
+                id="telphone"
+                name ="telnum"
+                placeholder="phone number"
+                pattern = "[0-9]{11}"
+                required >
+                <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input 
+                type="date"
+                id="dob"
+                name="dob"
+                required >
+            <br><br>
+
+            <label for="address">Address:</label>
+            <textarea
+                row="3"
+                id="address"
+                name="address"
+                placeholder="Your present address"
+                required></textarea>
+            <br><br>
+
+            <lalbel for="img">Your profile pic: </lalbel>
+            <input 
+                type="file"
+                id="img"
+                name="img"
+                accept="image/"
+                required>
+            <br><br>
+
+            <label for="favcol">Your favourite color: <label>
+            <input
+                type="color"
+                id="favcol"
+                name="favcol"
+                value="#F54927"
+                required >
+
+        </fieldset>
+        <br><br>
+
+        <!-- Additional Information -->
+         <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="resume">Upload your Resume :</label>
+            <input type="file" id="resume" name="resume" accept="pdf/*" required>
+            <br><br>
+
+            <label for="salary">Salary Expections: </label>
+            <select id="salary" name="salary">
+                <option value="50K to 1 Lakh">50K to 1 Lakh</option>
+                <option value="1 Lakh to 2 Lakh">1 Lakh to 2 Lakh</option>
+                <option value="2 Lakh to 3 Lakh">2 Lakh to 3 Lakh</option>
+            </select>
+            <br><br>
+         </fieldset>
+            <br>
+         <button type="reset">Clear Form</button>
+         <button type="Submit">Submit</button>
+         <button type="preview">Preview</button>
+    </form>
+    
+</main>
+
+<footer>
+   
+    <p align="center"> &copy; 2025 All rights reserved by <em>Mohammad Saif Al Islam</em>. </p>
+</footer>
+
+</body>
+</html>
